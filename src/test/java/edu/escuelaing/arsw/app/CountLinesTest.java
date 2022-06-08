@@ -18,4 +18,12 @@ public class CountLinesTest
     {
         assertTrue( true );
     }
+
+    public void testLocCountLines(){
+        assertTrue(LocCountLines.numberOfLines("src/main/resources/Person.java")==5);
+    }
+
+    public void testPhyCountLines(){
+        assertTrue(PhyCountLines.numberOfLines("src/main/resources/Person.java")==18);
+    }
 }

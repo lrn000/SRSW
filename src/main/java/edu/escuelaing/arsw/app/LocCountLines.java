@@ -4,12 +4,21 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ *Cuenta las lineas de un archivo sin tener en cueta
+ * los espacios y lineas de comentarios
+ *
+ */
 
 public class LocCountLines {
     static long totalLines = 0;
     static long invalidLines = 0;
     static long total = 0;
 
+    /**
+     *fileName nombre del archivo
+     *return el número de lineas
+     */
     public static long numberOfLines(String fileName) {
         try {
             FileReader fr = new FileReader(fileName);
@@ -36,7 +45,12 @@ public class LocCountLines {
     }
 
 
-
+    /**
+     *Encuentra la posición en la que está el primer
+     * caracter si la linea no esta vacias
+     * line linea del archivo
+     * return primer caracter
+     */
     public static char nonEmptyCharacter(String line) {
         char character = ' ';
         try {
