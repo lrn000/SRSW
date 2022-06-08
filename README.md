@@ -13,7 +13,7 @@ Dado un archivo de código fuente se realizará el conteo de líneas que este co
 ## Pruebas
 
 
-
+![reportePrueba1](https://github.com/lrn000/SRSW/blob/master/imagenes/reportePrueba1.png)
 
 ### JAVADOC
 
